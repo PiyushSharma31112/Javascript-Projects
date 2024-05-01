@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+</head>
+
+<body>
+    
+    <button id="button" >Click Me!</button>  
+    <button id="Remove">Remove</button>
+
+    <style>
+            
+        body{
+            
+            background-color: #212121;
+             color: #fff;
+        }
+  
+        button{
+            cursor: pointer;
+        }
+
+    </style>
+    
+</body>
+
+<script>
+    
+    // Enter user "followers" and "Iamge" using "DOM" and "Events"
+
+    const button = document.getElementById("button");
+    const remove = document.getElementById("remove");
+    const body = document.querySelector("body");
+
+    const p = document.createElement("p")
+
+    
+    // create img tag .
+
+
+    let img = new Image()
+
+
+    // API response.
+
+    const apiKey = ` https://api.github.com/users/hiteshchoudhary`
+
+    const xhr = new XMLHttpRequest();
+
+    xhr.open("GET", apiKey);
+
+    let data;
+
+    xhr.onreadystatechange = function() { 
+
+        // if(xhr.readyState === 4){
+
+         data = JSON.parse(this.responseText);
+         console.log(data)
+        // }
+}
+
+    button.addEventListener("click", () => {
+
+
+       p.innerText = `followers is : ${data.followers}`
+       img.src = "https://avatars.githubusercontent.com/u/11613311?v=4" ;   
+
+            // img.remove();
+          
+            console.log(p)
+            console.log(data.avatar_url);
+        
+            document.body.appendChild(p)
+        
+            document.body.appendChild(img);
+        
+    });
+
+
+    remove.addEventListener("click" , () => {
+
+        if (p == true || img === true) {
+            
+            body.p.remove()
+            body.img.remove()
+
+        }
+       
+    })
+
+   
+
+    xhr.send()
+
+
+    
+
+</script>
+
+</html>

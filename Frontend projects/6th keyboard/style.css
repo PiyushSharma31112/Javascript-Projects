@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #212121;
+    color: #fff;
+} 
+
+.color{
+    color: aliceblue;
+    display: flex;
+    flex-direction: row; 
+}
+
+table , td , th{
+    border: 1px solid #e7e7e7;
+}
+
+.projects{
+    background-color: #1c1c1c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    height: 100vh;
+}

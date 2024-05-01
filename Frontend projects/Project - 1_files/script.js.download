@@ -1,0 +1,43 @@
+const buttons = document.querySelectorAll('.button')
+const body = document.querySelector('body')
+
+
+buttons.forEach( (box) => {
+
+    console.log(box)
+    box.addEventListener ( 'click' , (box) => {
+
+        if (box.target.id === "grey") {
+            
+            body.style.backgroundColor = box.target.id
+        }
+        if (box.target.id === "white") {
+            
+            body.style.backgroundColor = box.target.id
+            body.style.color = "black"
+        }
+        if (box.target.id === "yellow") {
+            
+            body.style.backgroundColor = box.target.id
+            body.style.color = "black"
+        }
+        if (box.target.id === "blue") {
+            
+            body.style.backgroundColor = box.target.id
+        }
+        if (box.target.id === "skyBlue") {
+            
+            body.style.backgroundColor = box.target.id
+            body.style.color = "black"
+            
+        }
+        
+    })
+});
+
+// const a = [1,2,3,4,5,6,7,8,9]
+
+// a.forEach( (value) =>{
+
+//     console.log(value)
+// } )

@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+
+.img{
+    height: 100vh;
+    width: 100%;
+    background-image: url('https://s3.amazonaws.com/thumbnails.venngage.com/template/1668cbdc-ad77-4e4d-8131-278a67fddb83.png') ;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    place-items: center;
+}
+
+h1{
+    text-align: center;
+    /* height: 100px;
+    width: 230%;*/
+    position: relative;
+    bottom: -310%;
+    z-index: 1; 
+}
+
+.div{
+    height: 400px;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8%;
+    background: transparent;
+    backdrop-filter: blur(5px) ; 
+    border: 1px solid #212121;
+}
+
+button{
+    height: 30px;
+    width: 100%;
+    background-color: aqua;
+    cursor: pointer;
+    border-radius: 20px;
+    border: 2px solid rgba(0,0,0,0.3);
+}
+
+button:hover{
+    background-color: rgb(18, 215, 215);
+}
+p{
+    font-size: 20px;
+}

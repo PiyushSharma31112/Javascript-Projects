@@ -1,0 +1,45 @@
+body{
+    background-color: #212121;
+    color: #fff;
+}
+
+.box{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 15%;
+}
+
+.button{
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+}
+
+.grey{
+    background-color: gray;
+}
+
+.white{
+    background-color: white;
+}
+
+.yellow{
+    background-color: yellow;
+}
+
+.blue{
+    background-color: blue;
+}
+.sky-blue{
+    background-color: skyblue;
+}
+
+h3{
+    margin-top: 40px;
+    text-align: center;
+}
+
